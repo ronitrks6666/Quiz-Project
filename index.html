@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="screenload()">
+
+
+
+    <div class="main-div">
+
+        <div class="procpage" id="page1">
+
+            <div class="defineq-box">
+                <div class="inst">
+                    <h2> Enter the number of question in the box below. </h2>
+                </div>
+                <input type="number" id="myInput">
+                <button class="procbtn" type="button" onclick="getInputValue();">START TEST</button>
+            </div>
+        </div>
+
+        <div class="quespage" id="page2">
+            <div class="inner-div" id="pag2">
+                <div class="ques">
+                    <h2 id="question">Question comes here</h2>
+                </div>
+                <div class="ans">
+                    <ul>
+                        <li>
+                            <input type="radio" name="answers" id="a" class="answer">
+                            <label for="a" id="option1"> Answer option</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answers" id="b" class="answer">
+                            <label for="b" id="option2"> Answer option</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answers" id="c" class="answer">
+                            <label for="c" id="option3"> Answer option</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answers" id="d" class="answer">
+                            <label for="d" id="option4"> Answer option</label>
+                        </li>
+                    </ul>
+                    <div class="npbtn" id="npbtnbox">
+                        <div><button id="back" class="mybtn">PREVIOUS</button></div>
+                        <div><button id="submit" class="mybtn">NEXT</button></div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+        </div>
+        <div id="showScore" class="scoreArea">
+            
+            <div id="totalpoint">
+
+            </div>
+        </div>
+
+       <!-- Footer -->
+<footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="#"> @RNX_Developers</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
